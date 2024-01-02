@@ -1,3 +1,4 @@
+/* Sets up the body to be a flex container with its content centered both vertically and horizontally, and with children laid out in a column */
 body {
     display: flex;
     align-items: center;
@@ -5,52 +6,54 @@ body {
     flex-direction: column;       
 }
 
-
+/* Styles the .main div as a flex container, centers its items on both axes, lays out children in a row, and adds spacing and styling */
 .main {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 40px;
-    padding: 50px;
-    border-radius: 10%;
-    border: 2px solid black;
+    gap: 40px; /* Space between child elements */
+    padding: 50px; /* Space inside the border */
+    border-radius: 10%; /* Rounded corners of the border */
+    border: 2px solid black; /* Solid black border */
 }
 
+/* Aligns items in .input-name div in a row with space between them */
 .input-name {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 4px;
+    gap: 4px; /* Space between child elements */
 }
 
+/* Styles the .button-group div to stack its children in a column and align them to the start */
 .button-group {
     display: flex;
     align-items: start;
     justify-content: space-between;
     flex-direction: column;
-    gap: 10px
+    gap: 10px /* Space between child elements */
 }
 
+/* Style for buttons to take up half of their container's width */
 .btn {
-
     width: 50%;
 }
 
-
+/* Styles the .saved-answer-area with a dashed border, column layout, and alignment to the start */
 .saved-answer-area {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    border: 2px dashed gray;
-    padding: 10px;
-
+    border: 2px dashed gray; /* Dashed gray border */
+    padding: 10px; /* Padding inside the border */
 }
 
+/* Styles for error message. Hidden by default, displayed in red with padding */
 #error {
-    display: none;
-    background-color: red;
-    padding: 5px;
+    display: none; /* Hidden by default */
+    background-color: red; /* Red background color */
+    padding: 5px; /* Padding inside the error message */
 }
