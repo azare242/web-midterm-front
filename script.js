@@ -40,6 +40,7 @@ window.addEventListener("DOMContentLoaded", () => {
       //SHOW ERROR TO USER FOR COMPLETING FORM
       error.style.display = "flex";
       error.innerHTML = "complete form"
+      return;
     } else {
       
       error.style.display = "none";
@@ -70,6 +71,8 @@ window.addEventListener("DOMContentLoaded", () => {
       .catch((err) => {
         error.style.display = "flex";
         error.innerHTML = err.message;
+        genderTxt.innerHTML = "GENDER";
+        genderVal.innerHTML = "Probability";
       });
   });
 
