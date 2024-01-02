@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
     lastName = formValues.name;
 
 
-    if (formValues.name === "" || formValues.gender === undefined) {
+    if (formValues.name === "") {
       //SHOW ERROR TO USER FOR COMPLETING FORM
       error.style.display = "flex";
       error.innerHTML = "complete form"

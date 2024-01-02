@@ -66,6 +66,8 @@ body {
 
 /* Styles for error message. Hidden by default, displayed in red with padding */
 #error {
+  border-radius: 10%; /* Rounded corners of the border */
+
   display: none; /* Hidden by default */
   background-color: red; /* Red background color */
   padding: 5px; /* Padding inside the error message */
